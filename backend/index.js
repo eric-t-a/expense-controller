@@ -22,6 +22,6 @@ app.get("/api/*", (req, res, next) => {
 
 app.use('/static', express.static(path.join(__dirname, '/../frontend/public')));
 
-app.listen(process.env.BACKEND_PORT, () => {
-    console.log(`Server running on port ${process.env.BACKEND_PORT},${__dirname}`)
+app.listen(process.env.PORT, () => {
+    console.log(`Server running on port ${process.env.PORT},${__dirname}`)
 })
