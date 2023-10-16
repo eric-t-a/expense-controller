@@ -16,6 +16,10 @@ app.get("/app/*", (req, res, next) => {
     res.sendFile(path.resolve(__dirname + "/../frontend/public/index.html"));
 });
 
+app.get("/api/*", (req, res, next) => {
+    res.json({'oie':'teste'})
+});
+
 app.use('/static', express.static(path.join(__dirname, '/../frontend/public')));
 
 app.listen(process.env.BACKEND_PORT, () => {

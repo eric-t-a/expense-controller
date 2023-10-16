@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { store } from '.';
 import { setUserData } from './store/user';
 
-export const BASE_URL = `${window.appUrl ?? 'http://localhost:8000'}/api`;
+export const BASE_URL = `/api`;
 
 const AuthUser = () => {
     
