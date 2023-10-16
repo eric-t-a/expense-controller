@@ -1,0 +1,13 @@
+export const yellow = "#d89614";
+export const red = "#dc4446";
+export const black = "#000";
+export const navy = "#eae9e6";
+export const lightNavy = "#f2f1ef";
+export const lightLightNavy = "#64605d";
+export const white = "#64605d";
+export const darkGray = "#64605d";
+export const green = "#49aa19";
+export const appSecondary = "#ecff9d";
+export const appPrimary = "#4a6da7";
+export const appPrimaryHover = "#2d4e76";
+export const blue = "#64605d";

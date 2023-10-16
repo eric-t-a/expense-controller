@@ -1,38 +1,97 @@
-.App {
-  text-align: center;
+.login-wrapper{
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  padding:20px;
+  background: #f2f1ef;
+  background-size: 200% 200%;
+  /* animation: gradient 5s ease infinite; */
+  border-radius: 10px;
+  padding-bottom:1px!important;
+}
+:where(.css-dev-only-do-not-override-p8kcfw).ant-checkbox-wrapper {
+  align-items: stretch;
+}
+.centraliza{
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.centraliza-v{
+  height: fit-content;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.content{
+  width: 100%;
+}
+
+.responsive-width{
+  width:80vw;
+  max-width: 500px;
+}
+
+.white-text{
+  color: #fff;
+}
+
+.card-side{
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-bottom: 5px;
+}
+
+.menu-modal{
+  margin: 0 auto;
+}
+.react-joyride__beacon :first-child{
+  background-color: #d73e1e !important;
+}
+.react-joyride__beacon :nth-child(2){
+  background-color: rgb(216, 150, 20, 0.2) !important;
+  border: 2px solid #d73e1e !important;
+}
+
+.nohigh {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+.nohigh::selection {
+  background: transparent;
+}
+
+body * {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+body *::selection {
+  background: transparent;
+}
+
+
+@media screen and (max-width: 552px) {
+  /* css when is mobile */
+  .menu-modal{
+    margin: unset;
+    margin-right: 16px;
+    margin-left: 16px;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
   }
-  to {
-    transform: rotate(360deg);
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
   }
 }
